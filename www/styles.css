@@ -223,3 +223,30 @@ table.t td.n{direction:ltr;text-align:left;color:var(--gold-l);font-weight:700}
 .paper table.rcpt th{font-weight:700}
 .paper table.rcpt td.nm{text-align:right}
 .paper table.rcpt td:first-child,.paper table.rcpt td:nth-child(3),.paper table.rcpt td:last-child{direction:ltr}
+
+/* ===== open-lock screen (Telegram-style passcode) ===== */
+.lockscreen{position:fixed;inset:0;z-index:9999;background:var(--bg);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:calc(var(--safe-top) + 24px) 24px calc(var(--safe-bot) + 24px);
+  animation:lockfade .18s ease}
+@keyframes lockfade{from{opacity:0}to{opacity:1}}
+.lock-inner{width:100%;max-width:360px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.lock-logo{width:88px;height:88px;border-radius:24px;display:flex;align-items:center;justify-content:center;
+  background:var(--card);border:1px solid var(--line);margin-bottom:6px;overflow:hidden}
+.lock-logo img{width:76px;height:76px;object-fit:contain}
+.lock-title{font-family:'El Messiri',sans-serif;font-size:24px;font-weight:700;color:var(--gold-l)}
+.lock-sub{font-size:14px;color:var(--muted);margin-bottom:6px;text-align:center;min-height:20px}
+.lock-dots{display:flex;gap:16px;justify-content:center;margin:8px 0 20px;min-height:18px}
+.lock-dots i{width:16px;height:16px;border-radius:50%;border:2px solid var(--gold);background:transparent;transition:transform .1s,background .1s}
+.lock-dots i.on{background:var(--gold-l);border-color:var(--gold-l);transform:scale(1.05)}
+.lock-dots.shake{animation:lshake .4s}
+@keyframes lshake{0%,100%{transform:translateX(0)}20%{transform:translateX(-10px)}40%{transform:translateX(10px)}60%{transform:translateX(-7px)}80%{transform:translateX(7px)}}
+.lock-pad{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;width:100%;max-width:300px;direction:ltr}
+.lock-pad button{aspect-ratio:1;border-radius:50%;border:1px solid var(--line);background:var(--card);
+  color:var(--text);font-size:28px;font-weight:600;font-family:inherit;cursor:pointer;
+  display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;
+  transition:transform .08s,background .12s}
+.lock-pad button:active{transform:scale(.92);background:var(--gold);color:var(--bg)}
+.lock-pad button.fn{background:transparent;border-color:transparent;font-size:16px;color:var(--muted)}
+.lock-pad button.fn:active{background:transparent;color:var(--gold-l);transform:scale(.92)}
+.lock-pad button.fn svg{width:28px;height:28px;stroke:currentColor;fill:none}
