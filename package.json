@@ -1,0 +1,25 @@
+{
+  "name": "jouri-cafe",
+  "version": "1.0.0",
+  "description": "Jouri cafe POS",
+  "main": "index.js",
+  "scripts": {
+    "sync": "npx cap sync android",
+    "open": "npx cap open android"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/cli": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/device": "^8.0.3",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.3",
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/el-messiri": "^5.3.0",
+    "@fontsource/tajawal": "^5.3.0"
+  }
+}

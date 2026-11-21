@@ -1,0 +1,9 @@
+{
+  "appId": "com.jouri.cafe",
+  "appName": "جوري",
+  "webDir": "www",
+  "android": { "backgroundColor": "#150b10" },
+  "plugins": {
+    "SystemBars": { "style": "DARK", "insetsHandling": "css" }
+  }
+}
