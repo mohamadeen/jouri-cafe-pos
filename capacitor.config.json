@@ -1,6 +1,6 @@
 {
   "appId": "com.jouri.cafe",
-  "appName": "جوري",
+  "appName": "حاسبتي",
   "webDir": "www",
   "android": { "backgroundColor": "#150b10" },
   "plugins": {
