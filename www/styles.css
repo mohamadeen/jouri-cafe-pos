@@ -250,3 +250,13 @@ table.t td.n{direction:ltr;text-align:left;color:var(--gold-l);font-weight:700}
 .lock-pad button.fn{background:transparent;border-color:transparent;font-size:16px;color:var(--muted)}
 .lock-pad button.fn:active{background:transparent;color:var(--gold-l);transform:scale(.92)}
 .lock-pad button.fn svg{width:28px;height:28px;stroke:currentColor;fill:none}
+
+/* ===== today's sales (cash drawer) under logo ===== */
+.sales-today{margin:12px auto 6px;max-width:300px;
+  background:linear-gradient(180deg,rgba(216,179,130,.14),rgba(216,179,130,.05));
+  border:1px solid var(--line);border-radius:18px;padding:12px 18px;
+  display:flex;flex-direction:column;align-items:center;gap:3px}
+.sales-today .lbl{font-size:12px;color:var(--muted);letter-spacing:.3px}
+.sales-today .amt{font-size:32px;font-weight:800;color:var(--gold-l);line-height:1.1;direction:ltr}
+.sales-today .amt em{font-size:14px;font-style:normal;color:var(--muted);font-weight:600}
+.sales-today .sub{font-size:11px;color:var(--muted)}
