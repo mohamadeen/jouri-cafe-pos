@@ -270,3 +270,8 @@ table.t td.n{direction:ltr;text-align:left;color:var(--gold-l);font-weight:700}
   color:var(--text);font-size:14px;font-family:inherit;cursor:pointer}
 .note-chip.on{background:var(--rose);color:var(--bg);border-color:var(--rose);font-weight:700}
 .note-chip:active{transform:scale(.95)}
+
+/* ===== shift-closed gate ===== */
+.closed-badge{width:92px;height:92px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(244,168,170,.12);border:2px solid rgba(244,168,170,.4);color:var(--rose)}
+.closed-badge svg{width:46px;height:46px;stroke:currentColor;fill:none}
